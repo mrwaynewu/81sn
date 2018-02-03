@@ -1,0 +1,11 @@
+{
+  "name": "ns18",
+  "version": "1.0.0",
+  "description": "Landing page for NetShaker 2018",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wayne Wu",
+  "license": "MIT"
+}
