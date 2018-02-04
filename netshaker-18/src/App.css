@@ -1,5 +1,5 @@
 body {
-    background-color: #192a56 !important;
+    background-color: #161e43 !important;
   }
 
 #root{
@@ -7,7 +7,7 @@ body {
     height: 100%;
 }
 
-a {color:#192a56 !important;}
+a {color:#161e43 !important;}
 
 .App {
   text-align: center;
@@ -51,6 +51,15 @@ a {color:#192a56 !important;}
   max-height:400px;
 }
 
+.Mail-icon{
+  font-size: 120px;
+  color:#161e43;
+}
+
+.Wechat-id{
+  color: #161e43;
+}
+
 .Title-inner{
   position: relative;
   top:30%;
@@ -89,7 +98,7 @@ a {color:#192a56 !important;}
 
 .ant-card-head-title{
   font-size:24px !important;
-  color:#192a56;
+  color:#161e43;
 }
 
 .Qr-code{
@@ -104,4 +113,32 @@ a {color:#192a56 !important;}
   .mid{display: none;}
   .Qr-code{width:120px;}
   h3{font-size:0.9em;}
+}
+
+@media screen and (max-width:768px ) and (min-width:501px){
+  .Main-outer{position:absolute;top:20%;left: unset;}
+  .Main-inner {flex-direction: column;}
+  .Bigwords{height:72vh;font-size: 64px;max-height: none;}
+  .Contact-card {height:auto;border-radius: unset;}
+  .mid{display: none;}
+  .Qr-code{width:120px;}
+  h3{font-size:1.5em;}
+}
+
+@media screen and (max-width:1024px ) and (min-width:769px){
+  .Main-outer{position:absolute;top:20%;left: unset;}
+  .Main-inner {flex-direction: column;}
+  .Bigwords{height:74vh;font-size: 86px;max-height: none;}
+  .Contact-card {height:auto;border-radius: unset;}
+  .mid{display: none;}
+  .Qr-code{width:120px;}
+  h3{font-size:1.5em;}
+}
+
+@media screen and (max-width:1440px ) and (min-width:1025px){
+  .Main-outer{left:12%}
+}
+
+@media screen and (max-width:2560px ) and (min-width:1921px){
+  .Main-outer{top:35%;left:25%}
 }

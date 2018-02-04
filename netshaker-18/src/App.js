@@ -1,44 +1,39 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Background from './Background';
 import { Card, Row, Col, Icon } from 'antd';
-//import WrappedRegistrationForm from './Contact';
-import Bigwords from './Bigwords';
+import Title from './Bigwords';
 import Obfuscate from 'react-obfuscate';
 
-
-const DemoBox = props => <p className={`height-${props.value}`}>{props.children}</p>;
+const CardBox = props => <div className={`height-${props.value}`}>{props.children}</div>;
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-
-
         <div className="Main-outer">
           <div className="Main-inner">
             <div className="Bigwords" >
-              <Bigwords />
+              <Title />
               </div>
               <div className="mid"></div>
           <Card className="Contact-card" title="Contact Us!">
               <Row type="flex" justify="space-around" align="middle">
                 <Col span={12}>
-                  <DemoBox value={50}>
-                    <Icon type="mail" style={{ fontSize: 120, color: '#192a56'}} />
+                  <CardBox value={50}>
+                    <Icon type="mail" className="Mail-icon"/>
                     <div><h3><Obfuscate
                       email='info@netshaker.ca'
                       headers={
                         { subject: 'I want a career mentor' }
                       }/></h3></div>
-                  </DemoBox>
+                  </CardBox>
                 </Col>
                 <Col span={12}>
-                  <DemoBox value={50}>
-                <img src={require("./qr_code.jpg")} className="Qr-code"/>
-                    <br /><h3 style={{ color: '#192a56'}}>WeChat ID: ReachMentor</h3>
-                  </DemoBox>
+                  <CardBox value={50}>
+                <img src={require("./qr_code.jpg")} className="Qr-code" alt="qr_code"/>
+                    <br /><h3 className="Wechat-id">WeChat ID: ReachMentor</h3>
+                  </CardBox>
                 </Col>
               </Row>
           </Card>
