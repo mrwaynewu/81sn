@@ -17,7 +17,7 @@ class App extends Component {
               <Title />
               </div>
               <div className="mid"></div>
-          <Card className="Contact-card" title="Contact Us!">
+          <Card className="Contact-card" title="Contact Us">
               <Row type="flex" justify="space-around" align="middle">
                 <Col span={12}>
                   <CardBox value={50}>
