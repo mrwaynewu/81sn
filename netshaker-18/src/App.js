@@ -4,45 +4,62 @@ import Background from './Background';
 import { Card, Row, Col, Icon } from 'antd';
 import Title from './Bigwords';
 import Obfuscate from 'react-obfuscate';
+import UnderConstruction from 'react-under-construction';
+import 'react-under-construction/build/css/index.css';
 
 const CardBox = props => <div className={`height-${props.value}`}>{props.children}</div>;
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="Main-outer">
-          <div className="Main-inner">
-            <div className="Bigwords" >
-              <Title />
-              </div>
-              <div className="mid"></div>
-          <Card className="Contact-card" title="Contact Us">
-              <Row type="flex" justify="space-around" align="middle">
-                <Col span={12}>
-                  <CardBox value={50}>
-                    <Icon type="mail" className="Mail-icon"/>
-                    <div><h3><Obfuscate
-                      email='info@netshaker.ca'
-                      headers={
-                        { subject: 'I want a career mentor' }
-                      }/></h3></div>
-                  </CardBox>
-                </Col>
-                <Col span={12}>
-                  <CardBox value={50}>
-                <img src={require("./qr_code.jpg")} className="Qr-code" alt="qr_code"/>
-                    <br /><h3 className="Wechat-id">WeChat ID: ReachMentor</h3>
-                  </CardBox>
-                </Col>
-              </Row>
-          </Card>
-          </div>
-        </div>
-        
-        <Background />
-
-      </div>
+      <UnderConstruction
+        background={{
+          image: 'https://github.com/mrwaynewu/81sn/blob/reno19/netshaker-18/src/background.jpg?raw=true',
+          textColor: '#fff',
+          overlay: {
+            color: '#000',
+            opacity: '.5'
+          }
+        }}
+        logo={{
+          src: 'https://github.com/mrwaynewu/81sn/blob/reno19/netshaker-18/src/logo.png',
+          alt: 'NetShaker'
+        }}
+        title={{
+          text: 'Rubbby'
+        }}
+        description={{
+          text: 'Our website is under construction. We\'ll be here soon, subscribe to be notified',
+          style: {
+            maxWidth: '440px',
+          }
+        }}
+        subscribe={{
+          placeholder: 'Enter your email',
+          buttonText: 'Subscribe',
+          onSubmit: (value) => {
+            console.log('user typed email :', value);
+          }
+        }}
+        links={[
+          {
+            url: 'https://www.facebook.com/',
+            image: 'https://image.flaticon.com/icons/svg/220/220200.svg',
+          },
+          {
+            url: 'https://www.twitter.com/',
+            image: 'https://image.flaticon.com/icons/svg/145/145812.svg',
+          },
+          {
+            url: 'https://www.linkedin.com/',
+            image: 'https://image.flaticon.com/icons/svg/145/145807.svg',
+          },
+          {
+            url: 'mailto:someone@example.com',
+            image: 'https://image.flaticon.com/icons/svg/321/321817.svg',
+          },
+        ]}
+      />
     );
   }
 }
