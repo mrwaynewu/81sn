@@ -12,7 +12,3 @@ a {color:#161e43 !important;}
 .App {
   text-align: center;
 }
-
-#root .UnderConstruction{
-    background-image: url('background.jpg') !important; 
-}

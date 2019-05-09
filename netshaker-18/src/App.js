@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <UnderConstruction
         background={{
+          image: 'https://user-images.githubusercontent.com/10855721/57420726-d8750b00-71d6-11e9-9e5e-b2cdd0609397.jpg',
           textColor: '#fff',
           overlay: {
             color: '#000',
