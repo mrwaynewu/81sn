@@ -5886,6 +5886,10 @@ react-slick@~0.16.0:
     object-assign "^4.1.0"
     slick-carousel "^1.6.0"
 
+react-under-construction@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/react-under-construction/-/react-under-construction-0.3.0.tgz#d0b9158a02a0bb9a43fe5c80e9cf71152d124ae1"
+
 react@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
