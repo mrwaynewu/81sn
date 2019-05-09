@@ -1,20 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Background from './Background';
-import { Card, Row, Col, Icon } from 'antd';
-import Title from './Bigwords';
-import Obfuscate from 'react-obfuscate';
 import UnderConstruction from 'react-under-construction';
 import 'react-under-construction/build/css/index.css';
-
-const CardBox = props => <div className={`height-${props.value}`}>{props.children}</div>;
 
 class App extends Component {
   render() {
     return (
       <UnderConstruction
         background={{
-          image: 'https://github.com/mrwaynewu/81sn/blob/reno19/netshaker-18/src/background.jpg?raw=true',
           textColor: '#fff',
           overlay: {
             color: '#000',
@@ -22,40 +15,33 @@ class App extends Component {
           }
         }}
         logo={{
-          src: 'https://github.com/mrwaynewu/81sn/blob/reno19/netshaker-18/src/logo.png',
-          alt: 'NetShaker'
-        }}
-        title={{
-          text: 'Rubbby'
+          src: 'https://user-images.githubusercontent.com/10855721/57347011-ce8fd100-711e-11e9-9c04-ef9242f3e20c.png',
+          alt: 'NetShaker',
+          style: {
+            width: '30%'
+          }
         }}
         description={{
-          text: 'Our website is under construction. We\'ll be here soon, subscribe to be notified',
+          text: 'Our website is under renovation. We\'ll be here soon, stay tuned.',
           style: {
             maxWidth: '440px',
           }
         }}
-        subscribe={{
-          placeholder: 'Enter your email',
-          buttonText: 'Subscribe',
-          onSubmit: (value) => {
-            console.log('user typed email :', value);
-          }
-        }}
         links={[
           {
-            url: 'https://www.facebook.com/',
+            url: 'https://www.facebook.com/netshaker',
             image: 'https://image.flaticon.com/icons/svg/220/220200.svg',
           },
           {
-            url: 'https://www.twitter.com/',
+            url: 'https://twitter.com/wearenetshaker',
             image: 'https://image.flaticon.com/icons/svg/145/145812.svg',
           },
           {
-            url: 'https://www.linkedin.com/',
+            url: 'https://linkedin.com/company/netshaker',
             image: 'https://image.flaticon.com/icons/svg/145/145807.svg',
           },
           {
-            url: 'mailto:someone@example.com',
+            url: 'mailto:info@netshaker.ca',
             image: 'https://image.flaticon.com/icons/svg/321/321817.svg',
           },
         ]}
